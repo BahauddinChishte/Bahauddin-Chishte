@@ -39,7 +39,7 @@ export default function Navbar() {
           <a href="#" className="relative group inline-flex items-center" onClick={() => setIsOpen(false)}>
           <div className="flex items-center space-x-1.5">
   <span className="text-lg font-bold text-blue-500 group-hover:text-blue-400 transition-all duration-300">
-    BAHAUDDIN
+    Bahauddin
   </span>
   <span className="text-lg font-light text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
     C.
