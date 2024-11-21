@@ -38,13 +38,14 @@ export default function Navbar() {
         <div className="p-6 border-b border-slate-800/50">
           <a href="#" className="relative group inline-flex items-center" onClick={() => setIsOpen(false)}>
           <div className="flex items-center space-x-1.5">
-  <span className="text-lg font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-pink-400 transition-all duration-300">
-    Bahauddin
+  <span className="text-lg font-bold text-blue-500 group-hover:text-blue-400 transition-all duration-300">
+    BAHAUDDIN
   </span>
-  <span className="text-lg font-light text-gray-500 group-hover:text-gray-200 transition-colors duration-300">
+  <span className="text-lg font-light text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
     C.
   </span>
 </div>
+
             <div className="absolute inset-0 -m-3 border border-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100" />
           </a>
         </div>
