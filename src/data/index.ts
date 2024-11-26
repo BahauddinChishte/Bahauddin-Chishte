@@ -41,6 +41,21 @@ interface Achievement {
   image: string;
 }
 
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  date: string;
+  tags: string[];
+  readTime: string;
+  image: string;
+  author: {
+    name: string;
+    avatar: string;
+  };
+}
+
 export const personalInfo: PersonalInfo = {
   name: "Baha",
   role: "Software Engineer",
@@ -153,5 +168,64 @@ export const achievements: Achievement[] = [
     organization: "Global Tech Hackathon",
     description: "Led a team of four to victory by creating a sustainable technology solution for reducing urban waste management costs. The project was later implemented by two major cities.",
     image: "https://images.unsplash.com/photo-1496469888073-80de7e952517?auto=format&fit=crop&w=800&q=80"
+  }
+];
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: "1",
+    title: "The Future of Web Development: What's Next?",
+    excerpt: "Exploring emerging trends and technologies shaping the future of web development.",
+    content: "As we look ahead to the future of web development...",
+    date: "2024-03-15",
+    tags: ["tech", "productivity"],
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    author: {
+      name: "Baha",
+      avatar: "https://avatars.githubusercontent.com/u/91181868?v=4"
+    }
+  },
+  {
+    id: "2",
+    title: "Building a Second Brain: A Book Review",
+    excerpt: "How to organize your digital life and unlock your creative potential.",
+    content: "In this comprehensive review of 'Building a Second Brain'...",
+    date: "2024-03-10",
+    tags: ["book-review", "productivity"],
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=800&q=80",
+    author: {
+      name: "Baha",
+      avatar: "https://avatars.githubusercontent.com/u/91181868?v=4"
+    }
+  },
+  {
+    id: "3",
+    title: "Essential Developer Resources for 2024",
+    excerpt: "A curated list of tools, websites, and resources for modern developers.",
+    content: "Stay ahead of the curve with these essential developer resources...",
+    date: "2024-03-05",
+    tags: ["resources", "tech"],
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80",
+    author: {
+      name: "Baha",
+      avatar: "https://avatars.githubusercontent.com/u/91181868?v=4"
+    }
+  },
+  {
+    id: "4",
+    title: "Mindful Programming: Finding Flow in Code",
+    excerpt: "Exploring the intersection of mindfulness and programming productivity.",
+    content: "Learn how to achieve flow state while coding...",
+    date: "2024-03-01",
+    tags: ["thought", "productivity"],
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+    author: {
+      name: "Baha",
+      avatar: "https://avatars.githubusercontent.com/u/91181868?v=4"
+    }
   }
 ];

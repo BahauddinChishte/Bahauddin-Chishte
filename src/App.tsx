@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import EducationJourney from './components/EducationJourney';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Blog from './components/Blog';
 import Achievements from './components/Achievements';
 import Interests from './components/Interests';
 import Impact from './components/Impact';
@@ -20,6 +21,7 @@ export default function App() {
             <EducationJourney />
             <Experience />
             <Projects />
+            <Blog />
             <Impact />
             <Achievements />
             <Interests />

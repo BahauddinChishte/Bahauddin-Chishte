@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Briefcase, FolderGit2, Trophy, Heart, HandHeart, Mail, Menu, X, GraduationCap, ChevronRight } from 'lucide-react';
+import { Home, Briefcase, FolderGit2, Trophy, Heart, HandHeart, Mail, Menu, X, GraduationCap, ChevronRight, BookOpen } from 'lucide-react';
 import { useActiveSection } from '../hooks/useActiveSection';
 
 export default function Navbar() {
@@ -11,6 +11,7 @@ export default function Navbar() {
     { label: 'Education', href: '#education', icon: GraduationCap },
     { label: 'Experience', href: '#experience', icon: Briefcase },
     { label: 'Projects', href: '#projects', icon: FolderGit2 },
+    { label: 'Blog', href: '#blog', icon: BookOpen },
     { label: 'Achievements', href: '#achievements', icon: Trophy },
     { label: 'Interests', href: '#interests', icon: Heart },
     { label: 'Impact & Volunteering', href: '#impact', icon: HandHeart },
@@ -37,15 +38,14 @@ export default function Navbar() {
         {/* Logo */}
         <div className="p-6 border-b border-slate-800/50">
           <a href="#" className="relative group inline-flex items-center" onClick={() => setIsOpen(false)}>
-          <div className="flex items-center space-x-1.5">
-  <span className="text-lg font-bold text-blue-500 group-hover:text-blue-400 transition-all duration-300">
-    Bahauddin
-  </span>
-  <span className="text-lg font-light text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
-    C.
-  </span>
-</div>
-
+            <div className="flex items-center space-x-1.5">
+              <span className="text-lg font-bold text-blue-500 group-hover:text-blue-400 transition-all duration-300">
+                Bahauddin
+              </span>
+              <span className="text-lg font-light text-gray-500 group-hover:text-gray-400 transition-colors duration-300">
+                C.
+              </span>
+            </div>
             <div className="absolute inset-0 -m-3 border border-slate-800 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100" />
           </a>
         </div>
